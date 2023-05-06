@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Agent
+comment0.text=\r\n\ A\ class\ that\ allows\ the\ agent\ to\ access\ methods\ to\ obtain\ details\r\n\ specific\ to\ the\ client\ the\ agent\ is\ acting\ on\ behalf\ of.\r\n\r\n\ @author\ (Jacob\ Smith)\r\n\ @version\ (04/05/2023)\r\n
+comment1.params=
+comment1.target=Agent()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Agent.\r\n
+comment2.params=
+comment2.target=void\ getClientInfo()
+comment2.text=\r\n\ Method\ that\ allows\ the\ agent\ to\ enter\ the\ client\ name\ and\ address.\r\n\r\n\ @return\ \ \ \ void\r\n
+comment3.params=
+comment3.target=java.lang.String\ displayLoginSuccess()
+comment3.text=\r\n\ Polymorphic\ method\ giving\ an\ override\ of\ displayLoginSuccess\ specific\r\n\ to\ an\ agent,\ highlighting\ the\ client\ info.\r\n\r\n\ @return\ \ \ \ void\r\n
+numComments=4

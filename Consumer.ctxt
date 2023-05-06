@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Consumer
+comment0.text=\r\n\ This\ class\ provides\ the\ customer\ to\ access\ methods\ specific\r\n\ to\ that\ of\ a\ consumer.\r\n\r\n\ @author\ (Jacob\ Smith)\r\n\ @version\ (04/05/2023)\r\n
+comment1.params=
+comment1.target=Consumer()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Consumer.\r\n
+comment2.params=
+comment2.target=void\ getCustomerAddress()
+comment2.text=\r\n\ A\ method\ that\ is\ responsible\ for\ obtaining\ user\ input\r\n\ for\ the\ customer's\ address.\r\n\r\n\ @return\ \ \ \ void\r\n
+numComments=3

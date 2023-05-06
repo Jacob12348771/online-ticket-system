@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Customer
+comment0.text=\r\n\ Class\ to\ register\ a\ new\ customer\ for\ the\ online\ ticketing\ system.\r\n\r\n\ @author\ (Jacob\ Smith)\r\n\ @version\ (04/05/2023)\r\n
+comment1.params=
+comment1.target=Customer()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Customer.\r\n
+comment2.params=
+comment2.target=void\ registerUser()
+comment2.text=\r\n\ A\ method\ that\ is\ responsible\ for\ obtaining\ user\ input\r\n\ for\ the\ email\ and\ password\ of\ the\ user.\r\n\r\n\ @return\ \ \ \ void\r\n
+comment3.params=value\ verificationType
+comment3.target=void\ verify(java.lang.String,\ char)
+comment3.text=\r\n\ A\ method\ that\ verifies\ the\ validity\ of\ information\ submitted\ by\r\n\ the\ customer.\ Validates\ correct\ email\ format\ and\ basic\ password\r\n\ complexity\ for\ security.\r\n\ \r\n\ @param\ \ value\ \ the\ inputted\ value\ for\ verification.\r\n\ @param\ \ verificationType\ \ identifier\ for\ the\ type\ of\ verification\r\n\ to\ be\ performed.\r\n\ @return\ \ \ \ void\r\n
+comment4.params=
+comment4.target=java.lang.String\ getEmail()
+comment4.text=\r\n\ A\ method\ that\ returns\ the\ inputted\ email.\r\n\r\n\ @return\ \ \ \ void\r\n
+comment5.params=
+comment5.target=java.lang.String\ displayLoginSuccess()
+comment5.text=\r\n\ A\ method\ that\ displays\ a\ success\ message\ to\ the\ once\ logged\ in.\r\n\r\n\ @return\ \ \ \ void\r\n
+numComments=6

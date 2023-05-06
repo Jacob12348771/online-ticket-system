@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Show
+comment0.text=\r\n\ This\ class\ contains\ the\ attributes\ for\ a\ show\r\n\ and\ also\ relevant\ methods.\r\n\r\n\ @author\ (Jacob\ Smith)\r\n\ @version\ (04/05/2023)\r\n
+comment1.params=showName\ showDate\ showTime
+comment1.target=Show(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Show\r\n
+comment2.params=
+comment2.target=java.lang.String\ getShowName()
+comment2.text=\r\n\ A\ method\ to\ get\ the\ show\ name.\r\n\r\n\ @return\ \ \ \ The\ show's\ name.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getShowTime()
+comment3.text=\r\n\ A\ method\ to\ get\ the\ show\ time.\r\n\r\n\ @return\ \ \ \ The\ show's\ time.\r\n
+comment4.params=
+comment4.target=java.lang.String\ getShowDate()
+comment4.text=\r\n\ A\ method\ to\ get\ the\ show\ date.\r\n\r\n\ @return\ \ \ \ The\ show's\ date.\r\n
+comment5.params=
+comment5.target=void\ showOrderComplete()
+comment5.text=\r\n\ A\ method\ that\ displays\ a\ message\ to\ the\ user,\r\n\ informing\ them\ of\ the\ show\ they\ selected.\r\n\r\n\ @return\ \ \ \ void\r\n
+numComments=6
