@@ -9,5 +9,5 @@ comment2.target=void\ getClientInfo()
 comment2.text=\r\n\ Method\ that\ allows\ the\ agent\ to\ enter\ the\ client\ name\ and\ address.\r\n\r\n\ @return\ \ \ \ void\r\n
 comment3.params=
 comment3.target=java.lang.String\ displayLoginSuccess()
-comment3.text=\r\n\ Polymorphic\ method\ giving\ an\ override\ of\ displayLoginSuccess\ specific\r\n\ to\ an\ agent,\ highlighting\ the\ client\ info.\r\n\r\n\ @return\ \ \ \ void\r\n
+comment3.text=\r\n\ Polymorphic\ method\ giving\ an\ override\ of\ displayLoginSuccess\ specific\r\n\ to\ an\ agent,\ highlighting\ the\ client\ info.\r\n\r\n\ @return\ \ \ \ login\ success\ message,\ showing\ client\ details.\r\n
 numComments=4

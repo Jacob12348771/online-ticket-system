@@ -12,13 +12,13 @@ public class Agent extends Customer
     // Instance variables.
     private String clientName;
     private String clientAddress;
-    
+
     /**
      * Constructor for objects of class Agent.
      */
     public Agent() {
-        clientName = this.clientName;
-        clientAddress = this.clientAddress;
+        this.clientName = clientName;
+        this.clientAddress = clientAddress;
     }
 
     /**
@@ -28,10 +28,10 @@ public class Agent extends Customer
      */
     protected void getClientInfo() {
         Scanner reader = new Scanner(System.in);
-        
+
         System.out.println("Please enter client name:");
         clientName = reader.next();
-        
+
         System.out.println("Please enter client address:");
         clientAddress = reader.next();
     }
@@ -40,14 +40,14 @@ public class Agent extends Customer
      * Polymorphic method giving an override of displayLoginSuccess specific
      * to an agent, highlighting the client info.
      *
-     * @return    void
+     * @return    login success message, showing client details.
      */
     protected String displayLoginSuccess() {
         String successMessage = "";
         successMessage += "Welcome Agent(" + getEmail() + "), client details below:" + '\n';
         successMessage += "Client name: " + clientName + '\n';
         successMessage += "Client address: " + clientAddress;
-        
+
         return successMessage;
     }
 }

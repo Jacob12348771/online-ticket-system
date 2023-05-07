@@ -14,7 +14,7 @@ public class Show
     private String showName;
     private String showDate;
     private String showTime;
-    
+
     /**
      * Constructor for objects of class Show
      */
@@ -23,7 +23,7 @@ public class Show
         this.showDate = showDate;
         this.showTime = showTime;
     }
-    
+
     /**
      * A method to get the show name.
      *
@@ -32,7 +32,7 @@ public class Show
     public String getShowName() {
         return this.showName;
     }
-    
+
     /**
      * A method to get the show time.
      *
@@ -41,7 +41,7 @@ public class Show
     public String getShowTime() {
         return this.showTime;
     }
-    
+
     /**
      * A method to get the show date.
      *
@@ -50,7 +50,7 @@ public class Show
     public String getShowDate() {
         return this.showDate;
     }
-    
+
     /**
      * A method that displays a message to the user,
      * informing them of the show they selected.

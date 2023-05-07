@@ -11,14 +11,14 @@ public class Consumer extends Customer
 {
     // Instance variables.
     private String address;
-    
+
     /**
      * Constructor for objects of class Consumer.
      */
-    protected Consumer() {
-        address = this.address;
+    public Consumer() {
+        this.address = address;
     }
-    
+
     /**
      * A method that is responsible for obtaining user input
      * for the customer's address.

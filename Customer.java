@@ -16,8 +16,8 @@ public abstract class Customer
      * Constructor for objects of class Customer.
      */
     public Customer() {
-        String email = this.email;
-        String password = this.password;
+        this.email = email;
+        this.password = password;
     }
 
     /**
@@ -49,12 +49,12 @@ public abstract class Customer
      * to be performed.
      * @return    void
      */
-    protected void verify(String value, char verificationType) {
+    private void verify(String value, char verificationType) {
         switch(verificationType){
             case 'e':
                 String emailToConfirm = "";
                 Scanner readerEmail = new Scanner(System.in);
-                
+
                 // Ensure a valid email is inputted.
                 while (!email.contains("@") || email.length() > 20) {
                     System.out.println("Invalid email");
@@ -73,16 +73,16 @@ public abstract class Customer
             case 'p':
                 String passwordToConfirm = "";
                 Scanner readerPassword = new Scanner(System.in);
-                
+
                 // Make sure password is of a valid length for security.
                 while (password.length() < 10) {
                     System.out.println("Please make sure password is more than 10 chatacters: ");
                     password = readerPassword.nextLine();
                 }
-                
+
                 System.out.println("Please repeat password: ");
                 passwordToConfirm = readerPassword.nextLine();
-                
+
                 // Password match check.
                 while (!password.equals(passwordToConfirm)) {
                     System.out.println("Password does not match please try again: ");
@@ -91,22 +91,22 @@ public abstract class Customer
                 break;
         }
     }
-    
+
     /**
      * A method that returns the inputted email.
      *
-     * @return    void
+     * @return    email address of the user.
      */
-    protected String getEmail() {
+    public String getEmail() {
         return email;
     }
 
     /**
-     * A method that displays a success message to the once logged in.
+     * A method that displays a success message to the user once logged in.
      *
-     * @return    void
+     * @return    welcome message.
      */
     protected String displayLoginSuccess() {
-         return "Welcome " + email + "!";
+        return "Welcome " + email + "!";
     }
 }

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=TicketSystem
-comment0.text=\r\n\ This\ class\ is\ the\ main\ class\ of\ the\ Online\ Ticketing\ System\ for\ the\ Bucks\r\n\ Centre\ of\ Performing\ Arts.\ This\ is\ a\ console\ application\ that\ allows\r\n\ input\ to\ select\ shows\ and\ tickets\ for\ a\ consumer\ and\ agent.\r\n\ This\ is\ the\ application\ entry\ point.\r\n\r\n\ @author\ (Jacob\ Smith)\r\n\ @version\ (04/05/202)\r\n
+comment0.text=\r\n\ This\ class\ is\ the\ main\ class\ of\ the\ Online\ Ticketing\ System\ for\ the\ Bucks\r\n\ Centre\ of\ Performing\ Arts.\ This\ is\ a\ console\ application\ that\ allows\r\n\ input\ from\ the\ terminal\ to\ select\ shows\ and\ tickets\ for\ a\ consumer\ and\ agent.\r\n\ This\ is\ the\ application\ entry\ point.\r\n\r\n\ @author\ (Jacob\ Smith)\r\n\ @version\ (04/05/202)\r\n
 comment1.params=
 comment1.target=TicketSystem()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ TicketSystem.\r\n
@@ -12,11 +12,11 @@ comment3.target=void\ createAndSortShows()
 comment3.text=\r\n\ A\ method\ that\ creates\ show\ objects\ for\ upcoming\ showings,\r\n\ storing\ them\ in\ seperate\ array\ lists,\ depending\ on\ time\ of\r\n\ showing.\r\n\r\n\ @return\ \ \ \ void\r\n
 comment4.params=
 comment4.target=void\ determineUser()
-comment4.text=\r\n\ A\ method\ that\ is\ responsible\ for\ determining\ if\ the\ user\r\n\ is\ an\ consumer\ or\ agent.\r\n\r\n\ @return\ \ \ \ void\r\n
+comment4.text=\r\n\ A\ method\ that\ is\ responsible\ for\ determining\ if\ the\ user\r\n\ is\ a\ consumer\ or\ agent.\r\n\r\n\ @return\ \ \ \ void\r\n
 comment5.params=
 comment5.target=java.lang.String\ determineIdealTime()
 comment5.text=\r\n\ A\ method\ that\ asks\ for\ user\ input\ to\ determine\ what\ time\r\n\ of\ day\ the\ user\ wants\ to\ see\ a\ show\ at.\r\n\r\n\ @return\ \ \ \ the\ time\ of\ day\ that\ a\ show\ wants\ to\ be\ seen\ at.\r\n
 comment6.params=idealTime
 comment6.target=Show\ determineShowToSee(java.lang.String)
-comment6.text=\r\n\ A\ method\ that\ determines\ the\ show\ the\ user\ wants\ to\ see.\r\n\r\n\ @param\ \ idealTime\ \ \ \ the\ time\ of\ day\ that\ a\ show\ wants\ to\ be\ seen\ at.\r\n\ @return\ \ \ \ the\ show\ that\ is\ selected\ to\ be\ seen.\r\n
+comment6.text=\r\n\ A\ method\ that\ determines\ the\ show\ the\ user\ wants\ to\ see\r\n\r\n\ @param\ \ idealTime\ \ \ \ the\ time\ of\ day\ that\ a\ show\ wants\ to\ be\ seen\ at.\r\n\ @return\ \ \ \ the\ show\ that\ is\ selected\ to\ be\ seen.\r\n
 numComments=7

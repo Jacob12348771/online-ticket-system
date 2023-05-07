@@ -4,7 +4,7 @@ import java.util.ArrayList;
 /**
  * This class is the main class of the Online Ticketing System for the Bucks
  * Centre of Performing Arts. This is a console application that allows
- * input to select shows and tickets for a consumer and agent.
+ * input from the terminal to select shows and tickets for a consumer and agent.
  * This is the application entry point.
  *
  * @author (Jacob Smith)
@@ -31,7 +31,7 @@ public class TicketSystem
      *
      * @return    void
      */
-    protected void main() 
+    private void main() 
     {
         determineUser();
 
@@ -59,7 +59,7 @@ public class TicketSystem
         }
 
     }
-    
+
     /**
      * A method that creates show objects for upcoming showings,
      * storing them in seperate array lists, depending on time of
@@ -95,7 +95,7 @@ public class TicketSystem
 
     /**
      * A method that is responsible for determining if the user
-     * is an consumer or agent.
+     * is a consumer or agent.
      *
      * @return    void
      */
@@ -104,7 +104,6 @@ public class TicketSystem
         System.out.println("Please select below:" + '\n' + "'1' for consumer registation." + '\n' + "'2' for agent registration.");
 
         Scanner reader = new Scanner(System.in);
-
         char userSelection = reader.next().charAt(0);
 
         while (userSelection != '1' && userSelection != '2') {
@@ -115,6 +114,7 @@ public class TicketSystem
         if (userSelection == '1') {
             Consumer consumer = new Consumer();
             consumer.registerUser();
+            consumer.getCustomerAddress();
             System.out.println(consumer.displayLoginSuccess());
         } else {
             Agent agent = new Agent();
@@ -123,7 +123,7 @@ public class TicketSystem
             System.out.println(agent.displayLoginSuccess());
         }
     }
-    
+
     /**
      * A method that asks for user input to determine what time
      * of day the user wants to see a show at.
@@ -138,7 +138,13 @@ public class TicketSystem
         Scanner reader = new Scanner(System.in);
         char userSelection = reader.next().charAt(0);
 
+        while (userSelection != '1' && userSelection != '2') {
+            System.out.println("Error, please make your selection again: ");
+            userSelection = reader.next().charAt(0);
+        }
+
         String idealTime = "";
+
         switch(userSelection) {
             case '1': idealTime = "Afternoon";
                 break;
@@ -150,7 +156,7 @@ public class TicketSystem
     }
 
     /**
-     * A method that determines the show the user wants to see.
+     * A method that determines the show the user wants to see
      *
      * @param  idealTime    the time of day that a show wants to be seen at.
      * @return    the show that is selected to be seen.
@@ -161,20 +167,24 @@ public class TicketSystem
             for(Show show : afternoonShows) {
                 System.out.println(show.getShowName() + " - " + show.getShowDate() + " - " + show.getShowTime());
             }
-            Scanner reader = new Scanner(System.in);    
+
+            Scanner reader = new Scanner(System.in);     
             char userSelection = reader.next().charAt(0);
 
             while (userSelection != '1' && userSelection != '2' && userSelection != '3') {
                 System.out.println("Error, please make your selection again: ");
                 userSelection = reader.next().charAt(0);
             }
+
             int chosenShow = userSelection - '0';
             chosenShow--;
+
             return afternoonShows.get(chosenShow);
         } else if(idealTime == "Evening") {
             for(Show show : eveningShows) {
                 System.out.println(show.getShowName() + " - " + show.getShowDate() + " - " + show.getShowTime());
             }
+
             Scanner reader = new Scanner(System.in);    
             char userSelection = reader.next().charAt(0);
 
@@ -182,8 +192,10 @@ public class TicketSystem
                 System.out.println("Error, please make your selection again: ");
                 userSelection = reader.next().charAt(0);
             }
+
             int chosenShow = userSelection - '0';
             chosenShow--;
+
             return eveningShows.get(chosenShow);
         }
         return null;
