@@ -30,10 +30,10 @@ public class Agent extends Customer
         Scanner reader = new Scanner(System.in);
 
         System.out.println("Please enter client name:");
-        clientName = reader.next();
+        clientName = reader.nextLine();
 
         System.out.println("Please enter client address:");
-        clientAddress = reader.next();
+        clientAddress = reader.nextLine();
     }
     
     /**

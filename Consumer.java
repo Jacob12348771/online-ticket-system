@@ -28,6 +28,6 @@ public class Consumer extends Customer
     protected void getCustomerAddress() {
         Scanner reader = new Scanner(System.in);
         System.out.println("Please enter your address for tickets to be sent to!: " + '\n');
-        address = reader.next();
+        address = reader.nextLine();
     }
 }
