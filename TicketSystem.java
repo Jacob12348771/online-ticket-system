@@ -31,7 +31,7 @@ public class TicketSystem
      *
      * @return    void
      */
-    private void main() 
+    protected void main() 
     {
         determineUser();
 
